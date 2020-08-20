@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Covid19List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    </head>
+    <body>
+        <div class="container mt-4">
+            <h1 class="display-3 text-center bg-info">
+              <i class="fas fa-book-open text-primary"></i> Covid-19<span class="text-danger"> TrafficLight </span>List</h1>
+
+              <h4 class="display-4 text-center bg-warning"> List of countries to avoid due to the pandemic! </h4>
+              <form id="country-form">
+                <div class="form-group">
+                  <label for="title">Name</label>
+                  <input type="text" id="name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="author">Status </label>
+                  <input type="text" id="status" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="isbn">Safe Category</label>
+                  <input type="text" id="category" class="form-control">
+                </div>
+                <input type="submit" value="Add Country" class="btn btn-info btn-block">
+              </form>
+              <table class="table table-striped mt-5">
+                <thead>
+                  <tr>
+                      <th>Destination </th>
+                    <!-- <th>Country Name</th> -->
+                    <th>Status</th>
+                    <th>Covid19 Category </th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="country-list"></tbody>
+              </table>
+          </div>
+        
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
